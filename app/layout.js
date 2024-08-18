@@ -1,4 +1,5 @@
-import { Josefin_Slab } from 'next/font/google'
+import { Josefin_Slab } from 'next/font/google';
+import Script from 'next/script';
 import "./style/style.css";
 
 const JOSEFIN_REGULAR = Josefin_Slab({
@@ -27,7 +28,11 @@ export default function RootLayout({ children }) {
       <body className={JOSEFIN_SEMIBOLD.className}>
         {children}
         
-        <script src="https://kit.fontawesome.com/79a164c540.js" crossorigin="anonymous"></script>
+        <Script 
+          src="https://kit.fontawesome.com/79a164c540.js" 
+          crossorigin="anonymous" 
+          strategy="beforeInteractive" 
+        />
       </body>
     </html>
   );

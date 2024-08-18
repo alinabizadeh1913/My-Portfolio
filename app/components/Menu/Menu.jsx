@@ -7,8 +7,10 @@ const Menu = () => {
     useEffect(() => {
         setTimeout(() => {
             loadMenu();
-            loadBack();
         },313)
+        setTimeout(() => {
+            loadBack();
+        },800)
     }, [])
 
     return (
@@ -17,7 +19,7 @@ const Menu = () => {
                 <div className="menu-inner flex flex-wrap items-center border-t border-slate-600 border-b border-opacity-45">
                     <div className="w-2/12 py-1 border-r border-slate-600 border-opacity-50 ">
                         <h1 className="text-[#3c7068] text-center select-none py-[7px] px-[10px]">
-                            <i class="fa-solid fa-code mr-2 text-white"></i>
+                            <i className="fa-solid fa-code mr-2 text-emerald-200"></i>
                             <span className="mr-1">
                                 ALi
                             </span>
@@ -29,39 +31,39 @@ const Menu = () => {
                     <div className="w-7/12 py-1">
                         <div className="links flex flex-wrap justify-center">
                             <a href="#" className="text-[#3c7068] mx-1 text-sm">
-                                <i class="fa-solid fa-rectangle-list mr-2 text-emerald-200"></i>
+                                <i className="fa-solid fa-rectangle-list mr-2 text-emerald-200"></i>
                                 <span>
                                     Summary
                                 </span>
-                                <i class="fa-solid fa-angle-down mr-1"></i>
+                                <i className="fa-solid fa-angle-down mr-1"></i>
                             </a>
                             <a href="#" className="text-[#3c7068] mx-1 text-sm">
-                                <i class="fa-solid fa-screwdriver-wrench mr-2 text-emerald-200"></i>
+                                <i className="fa-solid fa-screwdriver-wrench mr-2 text-emerald-200"></i>
                                 <span>
                                     Skills
                                 </span>
-                                <i class="fa-solid fa-angle-down mr-1"></i>
+                                <i className="fa-solid fa-angle-down mr-1"></i>
                             </a>
                             <a href="#" className="text-[#3c7068] mx-1 text-sm">
-                                <i class="fa-solid fa-briefcase mr-2 text-emerald-200"></i>
+                                <i className="fa-solid fa-briefcase mr-2 text-emerald-200"></i>
                                 <span>
                                     Project
                                 </span>
-                                <i class="fa-solid fa-angle-down mr-1"></i>
+                                <i className="fa-solid fa-angle-down mr-1"></i>
                             </a>
                             <a href="#" className="text-[#3c7068] mx-1 text-sm">
-                                <i class="fa-solid fa-graduation-cap mr-2 text-emerald-200"></i>
+                                <i className="fa-solid fa-graduation-cap mr-2 text-emerald-200"></i>
                                 <span>
                                     Education
                                 </span>
-                                <i class="fa-solid fa-angle-down mr-1"></i>
+                                <i className="fa-solid fa-angle-down mr-1"></i>
                             </a>
                             <a href="#" className="text-[#3c7068] mx-1 text-sm">
-                                <i class="fa-solid fa-language mr-2 text-emerald-200"></i>
+                                <i className="fa-solid fa-language mr-2 text-emerald-200"></i>
                                 <span>
                                     Language
                                 </span>
-                                <i class="fa-solid fa-angle-down mr-1"></i>
+                                <i className="fa-solid fa-angle-down mr-1"></i>
                             </a>
                         </div>
                     </div>
@@ -72,14 +74,14 @@ const Menu = () => {
                                 <span>
                                     About Me
                                 </span>
-                                <i class="fa-solid fa-angle-down mr-1"></i>
+                                <i className="fa-solid fa-angle-down mr-1"></i>
                             </a>
                             <a href="#" className="text-[#3c7068] mx-1 text-sm">
-                                <i class="fa-solid fa-phone mr-2 text-emerald-200"></i>
+                                <i className="fa-solid fa-phone mr-2 text-emerald-200"></i>
                                 <span>
                                     Contact
                                 </span>
-                                <i class="fa-solid fa-angle-down mr-1"></i>
+                                <i className="fa-solid fa-angle-down mr-1"></i>
                             </a>
                         </div>
                     </div>
