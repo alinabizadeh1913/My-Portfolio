@@ -1,7 +1,15 @@
-import { Inter } from "next/font/google";
-import "./globals.css";
+import { Josefin_Slab } from 'next/font/google'
+import "./style/style.css";
 
-const inter = Inter({ subsets: ["latin"] });
+const JOSEFIN_REGULAR = Josefin_Slab({
+  subsets : ['latin'],
+  weight : ['500']
+})
+
+const JOSEFIN_SEMIBOLD = Josefin_Slab({
+  subsets : ['latin'],
+  weight : ['700']
+})
 
 export const metadata = {
   title: "Create Next App",
@@ -11,7 +19,16 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <head>
+        <title>
+          Ali Nabizadeh | Portfolio
+        </title>
+      </head>
+      <body className={JOSEFIN_SEMIBOLD.className}>
+        {children}
+        
+        <script src="https://kit.fontawesome.com/79a164c540.js" crossorigin="anonymous"></script>
+      </body>
     </html>
   );
 }

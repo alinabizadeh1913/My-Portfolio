@@ -1,0 +1,83 @@
+// Tailwind
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+// Tailwind
+
+// Variable
+
+$text-mode : #fff;
+$bg-mode: #000908;
+$border-mode: #fff;
+$hover-mode: #fff;
+$hover-bg-mode: #000908;
+$hover-border-mode: #fff;
+$active-mode: #fff;
+$active-bg-mode: #000908;
+$active-border-mode: #fff;
+
+// Variable
+
+// Reboot
+
+body{
+    background-color: #000908;
+    overflow-x: hidden;
+    padding: 0 20px;
+}
+
+// Reboot
+
+// Menu
+
+#menu{
+    transform: translateY(-100px);
+    transition: transform 0.6313s ease;
+    .container{
+        .menu-inner{
+            .links{
+                a{
+                    padding: 5px 7px;
+                    border-radius: 4px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    span{
+                        position: relative;
+                        left: 0;
+                        transition: all 0.313s ease;
+                    }
+                    i:last-child{
+                        visibility: hidden;
+                        opacity: 0;
+                        color: #efefef;
+                        transition: 0.313s ease;
+                    }
+                }
+                a:hover{
+                    background-color: #14404780;
+                    i:first-child{
+                        visibility: hidden;
+                    }
+                    i:last-child{
+                        visibility: visible;
+                        opacity: 1;
+                    }
+                }
+                a:hover span{
+                    color: white;
+                    left: -17px;
+                }
+            }
+        }
+        .back1,.back2{
+            opacity: 0;
+            visibility: 0;
+            transition: 0.4313s ease;
+        }
+    }
+}
+
+// Menu
