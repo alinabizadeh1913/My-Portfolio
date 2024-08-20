@@ -1,17 +1,7 @@
 'use client';
-import { loadBack, loadMenu } from "@/app/utils/loadSection";
 import React, { useEffect } from "react";
 
 const Menu = () => {
-
-    useEffect(() => {
-        setTimeout(() => {
-            loadMenu();
-        },313)
-        setTimeout(() => {
-            loadBack();
-        },800)
-    }, [])
 
     return (
         <nav id="menu" className="my-5">
@@ -87,7 +77,7 @@ const Menu = () => {
                     </div>
                 </div>
 
-                <div className="back1 absolute top-[-150px] left-[-80px] w-[270px] h-[270px] rounded-full bg-[#3c7068] blur-[170px] z-[-1] hidden md:block"></div>
+                <div className="back1 absolute top-[-120px] left-[-50px] w-[270px] h-[270px] rounded-full bg-[#3c7068] z-[-1] hidden md:block"></div>
             </div>
         </nav>
     )

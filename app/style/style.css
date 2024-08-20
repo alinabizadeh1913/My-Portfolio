@@ -7,6 +7,11 @@ body {
   padding: 0 20px;
 }
 
+::selection {
+  background-color: #122b2b;
+  color: white;
+}
+
 #menu {
   transform: translateY(-100px);
   transition: transform 0.6313s ease;
@@ -43,8 +48,65 @@ body {
   color: white;
   left: -17px;
 }
-#menu .container .back1, #menu .container .back2 {
+#menu .container .back1 {
   opacity: 0;
   visibility: 0;
   transition: 0.4313s ease;
+  animation: blurOnBack 5s infinite linear;
+  filter: blur(140px);
+}
+
+#header .information .who-am-i .text {
+  transform: translateX(-101%);
+  transition: transform 0.4313s ease;
+}
+#header .information .who-am-i .text .label {
+  width: 100%;
+  height: 60%;
+  border-radius: 25px;
+  bottom: 0px;
+  z-index: -1;
+  background-color: #1c3638;
+  transform: translateY(105%);
+  left: 0;
+  padding: -1px;
+  transition: 0.313s ease;
+}
+#header .information .i-am span {
+  transform: translateX(-101%);
+  transition: transform 0.6313s ease;
+}
+#header .information .my-description {
+  transform: translateY(101%);
+  transition: transform 0.313s ease;
+}
+
+.move-description {
+  animation: moveDescription 5s infinite step-end;
+}
+
+@keyframes blurOnBack {
+  0% {
+    filter: blur(140px);
+  }
+  50% {
+    filter: blur(200px);
+  }
+  100% {
+    filter: blur(140px);
+  }
+}
+@keyframes moveDescription {
+  0% {
+    transform: translateY(0);
+  }
+  33% {
+    transform: translateY(-45.3px);
+  }
+  66% {
+    transform: translateY(-90.6px);
+  }
+  100% {
+    transform: translateY(0);
+  }
 }
